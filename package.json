@@ -14,7 +14,9 @@
   },
   "scripts": {
     "test": "scripts/test --browsers Firefox --single-run",
-    "start": "scripts/dev-examples"
+    "start": "scripts/dev-examples",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "authors": [
     "Ryan Florence"
@@ -27,27 +29,28 @@
     "babel-preset-react": "^6.5.0",
     "envify": "^3.4.1",
     "expect": "1.10.0",
-    "karma": "^0.13.22",
-    "karma-browserify": "^4.2.1",
+    "karma": "^2.0.3",
+    "karma-browserify": "^5.3.0",
     "karma-chrome-launcher": "0.2.0",
     "karma-cli": "0.1.0",
     "karma-firefox-launcher": "0.1.6",
     "karma-mocha": "0.2.0",
     "karma-safari-launcher": "^0.1.1",
-    "mocha": "2.3.3",
+    "mocha": "4.0.0",
     "react": "^15.0.0",
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.0.0",
     "rf-release": "0.4.0",
     "sinon": "^1.17.3",
-    "uglify-js": "2.4.24",
-    "webpack": "^1.12.14",
-    "webpack-dev-server": "1.11.0"
+    "uglify-js": "2.6.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "3.1.11"
   },
   "dependencies": {
     "element-class": "^0.2.0",
     "exenv": "1.2.0",
-    "lodash.assign": "^3.2.0"
+    "lodash.assign": "^3.2.0",
+    "snyk": "^1.145.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0"
@@ -62,5 +65,6 @@
     "react-component",
     "modal",
     "dialog"
-  ]
+  ],
+  "snyk": true
 }
