@@ -14,7 +14,9 @@
   },
   "scripts": {
     "test": "scripts/test --browsers Firefox --single-run",
-    "start": "scripts/dev-examples"
+    "start": "scripts/dev-examples",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "authors": [
     "Ryan Florence"
@@ -47,7 +49,8 @@
   "dependencies": {
     "element-class": "^0.2.0",
     "exenv": "1.2.0",
-    "lodash.assign": "^3.2.0"
+    "lodash.assign": "^3.2.0",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0"
@@ -62,5 +65,6 @@
     "react-component",
     "modal",
     "dialog"
-  ]
+  ],
+  "snyk": true
 }
