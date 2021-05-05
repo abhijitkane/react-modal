@@ -42,7 +42,7 @@
     "sinon": "^1.17.3",
     "uglify-js": "2.4.24",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "1.11.0"
+    "webpack-dev-server": "1.13.0"
   },
   "dependencies": {
     "element-class": "^0.2.0",
