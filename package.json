@@ -27,7 +27,7 @@
     "babel-preset-react": "^6.5.0",
     "envify": "^3.4.1",
     "expect": "1.10.0",
-    "karma": "^0.13.22",
+    "karma": "^5.0.8",
     "karma-browserify": "^4.2.1",
     "karma-chrome-launcher": "0.2.0",
     "karma-cli": "0.1.0",
@@ -42,7 +42,7 @@
     "sinon": "^1.17.3",
     "uglify-js": "2.4.24",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "1.11.0"
+    "webpack-dev-server": "1.13.0"
   },
   "dependencies": {
     "element-class": "^0.2.0",
